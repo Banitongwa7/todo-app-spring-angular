@@ -1,0 +1,9 @@
+<form (ngSubmit)="addTodo()" method="post" class="d-flex justify-content-center align-items-center mb-4 w-100">
+   <div class="form-outline flex-fill w-100">
+        <label class="form-label" for="form2">Nouvelle tâche</label>
+        <input type="text" id="form2" placeholder="Titre" [(ngModel)]="newTodo.title" name="title" class="form-control mb-2" required/>
+        <textarea placeholder="Description" [(ngModel)]="newTodo.description" name="description" class="form-control"></textarea>
+   </div>
+   <button type="submit" class="btn btn-info ms-2">Ajouter</button>
+</form>
+  
